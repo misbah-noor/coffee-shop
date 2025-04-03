@@ -1,0 +1,49 @@
+.App{
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+
+.text-shadow{
+   text-shadow: 2px 2px 8px rgb(183, 113, 39);
+}
+
+.hero-section{
+  background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.551)), url(/images/hero-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section{
+  height: 340px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/coffee.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.right-box h2::before{
+  position: absolute;
+  content: " ";
+  top: 35px;
+  height: 2px;
+  width: 70px;
+  background-color: rgb(147, 147, 13);
+}
+
+.heading{
+    position: relative;
+
+}
+
+.heading::before{
+  position: absolute;
+  content: " ";
+  top: 50%;
+  background: rgb(240, 207, 45);
+  height: 3px;
+  width: 300px;
+  margin-left: 3%;
+}
