@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Footer from '../Components/Nav/Navbar/Footer';
 
 
 const Menu = () => {
@@ -49,9 +50,9 @@ const Menu = () => {
 
     const [OrderMessage, setOrderMessage] = useState("");
     const handleOrder = (coffeeName) => {
-        setOrderMessage(`Your order for ${coffeeName} has been placed!`);
+        setOrderMessage(alert(`Your order for ${coffeeName} has been placed!`));
 
-        setTimeout(() => setOrderMessage(""), 4000);
+        setTimeout(() => setOrderMessage(""), 2000);
     };
 
     return(
@@ -62,11 +63,6 @@ const Menu = () => {
         </div>
         <div className=' h-full py-18 text-amber-700 flex flex-col justify-center items-center'>
          <h2 className='text-2xl md:text-4xl text-center mb-12 font-bold'>Our Coffee Menu</h2>
-         {OrderMessage && (
-            <div className='text-green-500 text-center text-xl font-semibold mb-4 py-10'>
-            {OrderMessage}
-            </div>
-         )}
          <div className='grid grid-cols-1 sm:grid-col-2 lg:grid-cols-2 xl:grid-cols-3 gap-6'>
         {coffeeMenu.map((coffee) => (
             <div key={coffee.id} className='bg-[#3E2C20] rounded-xl shadow-lg md:w-[350px] w-full overflow-hidden' data-aos='fade-up' data-aos-duration='3000'>
@@ -83,7 +79,7 @@ const Menu = () => {
          </div>
 
         </div>
-           
+            <Footer/>
         </div>
     );
 };

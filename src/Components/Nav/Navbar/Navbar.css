@@ -9,6 +9,7 @@
     display: flex;
     gap: 2px;
     cursor: pointer;
+    font-size: 18px;
     color: rgb(73, 71, 71);
     transition: all 0.3s ease-in-out;
   }
@@ -21,7 +22,6 @@
   .navbar ul li a{
     display: block;
     padding-top: 10px;
-    /* padding: 10px 6px; */
     margin: 0 1rem;
   }
   

@@ -10,7 +10,7 @@ export default function Home()
     
     return(
     <div className='hero'>
-     <div className='hero-section h-screen text-white'>
+     <div className='hero-section h-[690px] text-white'>
      <div className='pt-20 pb-10'>
         <div className='flex flex-col justify-center items-center md:mt-[70px]' data-aos='zoom-in' data-aos-duration='1000'>
         <h2 className='font-semibold text-5xl md:text-7xl text-white text-center mt-[65px] text-shadow md:mt-10px'>Welcome to Coffee Shop</h2>

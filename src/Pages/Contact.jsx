@@ -1,9 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Footer from '../Components/Nav/Navbar/Footer';
 
 
 const Contact = () => {
+  const [feedbackSubmitted, setFeedbackSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    setFeedbackSubmitted(true);
+
+  };
 
   useEffect(() => {
     AOS.init()
@@ -33,9 +40,12 @@ const Contact = () => {
             <div class="mb-4">
               <textarea id="message" placeholder="Message" name="message" class="w-full bg-white rounded-3xl border border-gray-300 h-32 text-xl outline-none text-gray-700 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
             </div>
-            <button class="px-8 py-4 bg-gradient-to-r from-amber-900 to-amber-500 text-white font-bold text-md rounded-full hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-900 hover:origin-left transition-all ease-in-out duration-200 flex gap-2 items-center justify-center mt-5">
+            <button onClick={handleSubmit} class="px-8 py-4 bg-gradient-to-r from-amber-900 to-amber-500 text-white font-bold text-md rounded-full hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-900 hover:origin-left transition-all ease-in-out duration-200 flex gap-2 items-center justify-center mt-5">
               Message Now
           </button>
+          {feedbackSubmitted && (
+            <p className='text-green-600 text-xl font-semibold mt-8'>Your feedback is submitted</p>
+          )}
           </div>
            <div class="right" data-aos="flip-up"
           data-aos-easing="ease-out-cubic"
@@ -48,7 +58,7 @@ const Contact = () => {
          </div>
 
          </div>
-
+ <Footer/>
         </div>
     );
 };
