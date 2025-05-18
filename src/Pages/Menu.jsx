@@ -57,13 +57,13 @@ const Menu = () => {
 
     return(
         <div >
-        <div className="section flex justify-center items-center flex-col pt-[120px]">
+        <div className="section md:mt-20 mt-0 flex justify-center items-center flex-col pt-[120px]">
             <h1 className='text-white md:text-5xl text-5xl font-bold'>Our Menu</h1>
             <h2 className='text-slate-100 mt-10'>Home -- Menu</h2>
         </div>
         <div className=' h-full py-18 text-amber-700 flex flex-col justify-center items-center'>
          <h2 className='text-2xl md:text-4xl text-center mb-12 font-bold'>Our Coffee Menu</h2>
-         <div className='grid grid-cols-1 sm:grid-col-2 lg:grid-cols-2 xl:grid-cols-3 gap-6'>
+         <div className='grid grid-cols-1 sm:grid-col-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mx-5'>
         {coffeeMenu.map((coffee) => (
             <div key={coffee.id} className='bg-[#3E2C20] rounded-xl shadow-lg md:w-[350px] w-full overflow-hidden' data-aos='fade-up' data-aos-duration='3000'>
              <img src={coffee.image} alt="{coffee.name}" className=' h-60 w-full object-cover rounded-md hover:scale-105 hover:transform hover:transition-all duration-300' />

@@ -8,14 +8,14 @@ useEffect(() => {
     AOS.init();
 }, []);
     return(
-       <div> 
-       <div className='section'>
+       <div className='overflow-hidden'> 
+       <div className='section md:mt-20 mt-0'>
         <div className="flex justify-center items-center flex-col pt-[120px]">
             <h1 className='text-white md:text-5xl text-5xl font-bold'>About Us</h1>
             <h2 className='text-slate-100 mt-10'>Home -- About</h2>
         </div>       
         </div>
-        <div className="container mx-auto px-24 py-34 mt-13 mb-10">
+        <div className="container px-10 md:px-24 md:py-34 mt-13 mb-10">
          <div className='grid grid-col-1 md:grid-cols-2 md:gap-6 gap-37 items-center'>
          <div className='left-box flex justify-center relative' data-aos='fade-right' data-aos-duration='3000'>
          <div className='brown-box absolute bg-amber-800 md:h-[135px] w-[130px] z-3 right-[-2%] top-30 lg:right-[-8%] lg:top-87 rounded-lg text-center'>

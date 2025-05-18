@@ -17,7 +17,7 @@ const Contact = () => {
   });
     return(
         <div>
-        <div className="section flex justify-center items-center flex-col pt-[120px]">
+        <div className="section md:mt-20 mt-0 flex justify-center items-center flex-col pt-[120px]">
             <h1 className='text-white md:text-5xl text-5xl font-bold'>Contact Us</h1>
             <h2 className='text-slate-100 mt-10'>Home -- Contact Us</h2>
         </div>
@@ -25,7 +25,7 @@ const Contact = () => {
          <div className='h-full py-14' data-aos='fade-up' data-aos-duration='3000'>
            <h2 className='text-center leading-14 mx-auto font-bold pb-10 text-5xl text-amber-700 w-75'>For Quality Coffee Contact Us</h2>
 
-           <div className='grid grid-cols-1 sm:grid-cols-2 md:gap-14 gap-8 px-20 md:mx-auto container'>
+           <div className='grid grid-cols-1 sm:grid-cols-2 md:gap-14 gap-8 px-10 md:px-20 md:mx-auto container'>
       
          
              <div class="left" data-aos='fade-down' data-aos-duration='3000'>

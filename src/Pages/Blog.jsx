@@ -10,8 +10,8 @@ export default function Blog(){
     });
 
     return(
-        <div>
-        <div className="section flex justify-center items-center flex-col pt-[120px]">
+        <div className='overflow-hidden'>
+        <div className="section md:mt-20 mt-0 flex justify-center items-center flex-col pt-[120px]">
             <h1 className='text-white md:text-5xl text-5xl font-bold'>Blogs</h1>
             <h2 className='text-slate-100 mt-10'>Home -- Blog</h2>
         </div>
@@ -22,9 +22,9 @@ export default function Blog(){
             </div>
          
 
-           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-9'>
+           <div className='grid grid-cols-1 sm:grid-col-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mx-5 '>
  
-            <div className='bg-[#3E2C20] rounded-xl shadow-xl md:w-[350px] w-[400px] mx-auto overflow-hidden flex flex-col justify-center items-center' data-aos='fade-right' data-aos-duration='3000'>
+            <div className='bg-[#3E2C20]  rounded-xl shadow-lg md:w-[350px] w-full mx-auto overflow-hidden flex flex-col justify-center items-center' data-aos='fade-right' data-aos-duration='3000'>
              <img src="/images/blog.jpg" alt="error" className='w-75 h-75 object-cover rounded-full p-6' />
              <div className="content text-center pb-5">
              <h3 className='text-xl font-semibold mt-4 px-5 text-amber-500'>John Due</h3>
@@ -34,7 +34,7 @@ export default function Blog(){
             
             </div>
 
-            <div className='bg-[#3E2C20] rounded-xl shadow-xl md:w-[350px] w-[400px] mx-auto overflow-hidden flex flex-col justify-center items-center' data-aos='fade-up' data-aos-duration='3000' >
+            <div className='bg-[#3E2C20]  rounded-xl shadow-lg md:w-[350px] w-full mx-auto overflow-hidden flex flex-col justify-center items-center' data-aos='fade-up' data-aos-duration='3000' >
              <img src="/images/blog2.jpg" alt="error" className='w-75 h-75 object-cover rounded-full p-2' />
              <div className="content text-center pb-5">
              <h3 className='text-xl font-semibold mt-4 px-5 text-amber-500'>Susan Jin</h3>
@@ -44,7 +44,7 @@ export default function Blog(){
             
             </div>
 
-            <div className='bg-[#3E2C20] rounded-xl shadow-xl md:w-[350px] w-[400px] mx-auto overflow-hidden flex flex-col justify-center items-center' data-aos='fade-left' data-aos-duration='3000'>
+            <div className='bg-[#3E2C20]  rounded-xl shadow-lg md:w-[350px] w-full mx-auto overflow-hidden flex flex-col justify-center items-center' data-aos='fade-left' data-aos-duration='3000'>
              <img src="/images/blog3.jpg" alt="{coffee.name}" className='w-75 h-75 object-cover rounded-full p-2' />
              <div className="content text-center pb-5">
              <h3 className='text-xl font-semibold mt-4 px-5 text-amber-500'>Maria Andrew</h3>

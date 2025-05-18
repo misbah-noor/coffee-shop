@@ -13,7 +13,7 @@ export default function Navbar(){
   
      return(
       <Router>
-      <nav className='navbar flex justify-between items-center bg-white px-20 py-2 sticky top-0 z-4 shadow-lg'>
+      <nav className='navbar flex justify-between items-center bg-white px-20 py-2 fixed w-full top-0 z-4 shadow-lg'>
          <div>
             <img src="./images/logo2.png" className='w-18' alt="logo" />
          </div>
